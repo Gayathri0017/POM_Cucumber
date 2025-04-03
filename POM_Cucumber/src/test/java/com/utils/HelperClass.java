@@ -27,7 +27,8 @@ public class HelperClass{
 	}
 	public static void tearDown() {
 		if(driver!=null) {
-			driver.close();
+			driver.quit();
+			driver=null;
 		}
 		helperClass=null;
 	}
